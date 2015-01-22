@@ -1,11 +1,11 @@
 ## Program: cachematrix.R
 ## Author: thefstopshere
-##Programing assignment 2 for the Coursera course R Programming
+## Programing assignment 2 for the Coursera course R Programming
 ## 
 ##
-##"If you can't fly then run, if you can't run then walk, 
-##if you can't walk then crawl, but whatever you do you have
-##to keep moving forward."  - MLK
+## "If you can't fly then run, if you can't run then walk, 
+## if you can't walk then crawl, but whatever you do you have
+## to keep moving forward."  - MLK
 ##
 ## This program calcualtes the inverse of a special 'matrix' created with
 ## the makeCacheMatrix function.  The inverse of the matrix is cached, allowing
@@ -14,9 +14,9 @@
 ##
 
 
-##Function: makeCacheMatrix
+## Function: makeCacheMatrix
 ##
-##his function is used to create the 'matrix' type object that will store
+## This function is used to create the 'matrix' type object that will store
 ## the inverse of a matrix.  After creating calling this function on a matrix,
 ## the cacheSolve function can be used to obtain the inverse of the matrix.
 ##
@@ -24,8 +24,8 @@ makeCacheMatrix <- function(x = matrix()) {
   
   invert <- NULL
 
-  set <- function(y) {
-    x <<- y
+  set <- function(z) {
+    x <<- z
     invert <<- NULL
   }
   get <- function() x
@@ -38,7 +38,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 }
 
-##Function: cacheSolve
+## Function: cacheSolve
 ##
 ## This function is used to obtain the inverse of a matrix object created with the
 ## makeCacheMatrix function.  Ifthe inverse of the matrix has already been calcualted
